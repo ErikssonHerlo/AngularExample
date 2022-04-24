@@ -1,1 +1,7 @@
-<p>Here was a Employee</p>
+<p>Name of Employee: {{name}}</p>
+<p>Last Name of Employee: {{lastName}}</p>
+<p>Age of Employee: {{age<18 ? "Younger":"Adult"}}</p>
+<p>Company of Employee: {{company.value}}</p>
+     <input type="text" placeholder="Ingrese su Empresa" #company/>
+
+  <button type="button" (click)="showCompany(company.value)">Enviar</button> 
